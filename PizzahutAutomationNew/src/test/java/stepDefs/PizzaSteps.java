@@ -68,7 +68,6 @@ public class PizzaSteps {
         tab.click();
     }
 
-    // Helper method to scroll to pizza card
     public WebElement findPizzaCard(String pizzaName) {
         WebElement pizzaCard;
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -87,8 +86,6 @@ public class PizzaSteps {
         throw new NoSuchElementException("Pizza " + pizzaName + " not found on the page");
     }
 
-    // Add pizza to basket
- // Add pizza to basket
  // Add pizza to basket
     @When("I add {string} to the basket")
     public void i_add_item_to_basket(String pizzaName) {
@@ -169,3 +166,4 @@ public class PizzaSteps {
         emailBox.sendKeys(email);
     }
 }
+
